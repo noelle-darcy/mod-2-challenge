@@ -5,9 +5,62 @@
 }
 
 body {
-    background-color: #cfddee;
+    background-color: #d4dde7;
 }
 
-.section h2 {
-    border-right: 10px solid steelblue;
+/* This CSS code is related to the top header. */
+.main-header {
+    display: flex;
+    background: rgb(44, 44, 48);
+    height: 75px;
+    width: 100%;
 }
+#name {
+    display: block;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    background: rgb(102, 145, 105);
+    margin-top: 10px;
+    font-size: 40px;
+    padding-bottom: 15px;
+    color: rgb(44, 44, 48);
+}
+
+li a{
+    color: rgb(102, 145, 105); 
+}
+
+li {
+    padding: 15px 10px 0px 10px;
+    list-style-type: none;
+    display: inline;
+    font-size: 25px;
+}
+/* Still need to figure out how to move navigational buttons to bottom left. */
+
+
+/*This is for the CSS code regarding to the second header.*/
+.header2 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.subtitle {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    display: block;
+    font-size: 30px;
+    width: 200px;
+    height: 50px;
+    padding: 8px;
+    background: rgb(102, 145, 105);
+}
+#image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
