@@ -37,8 +37,12 @@ li {
     display: inline;
     font-size: 25px;
 }
-/* Still need to figure out how to move navigational buttons to bottom left. */
 
+.nav-titles {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
 
 /*This is for the CSS code regarding to the second header.*/
 .header2 {
@@ -63,25 +67,42 @@ li {
     object-fit: cover;
 }
 
+/* About Me CSS Code */
 .about-me{
     position: relative;
 }
 .side-titles {
+    position: absolute;
+    top: 40px;
     display: block;
     color: rgb(27, 77, 27);
     font-size: 60px;
     width: 200px;
-    margin-left: 40px;
+    margin-left: 61px;
+    border-right: 5px solid rgb(27, 77, 27);
+    height: 400px;
 }
 
 #biography {
     position: absolute;
-    top: 15px;
-    left: 250px;
-    height: 50px;
-    border-left: 5px solid rgb(27, 77, 27);
+    font-size: 18px;
+    top: 50px;
+    left: 280px;
     padding-left: 10px;
     color: rgb(27, 77, 27);
+}
+
+/* Work CSS Code */
+.side-titles2 {
+    display: block;
+    position: relative;
+    color: rgb(27, 77, 27);
+    font-size: 60px;
+    width: 200px;
+    margin-left: 61px;
+    border-right: 5px solid rgb(27, 77, 27);
+    height: 300px;
+    top: 500px;
 }
 
 /* Contact Me CSS Code */
@@ -91,14 +112,41 @@ li {
     font-size: 60px;
     width: 220px;
     margin-left: 40px;
-    top: 800px;
+    top: 1160px;
     border-right: 5px solid rgb(27, 77, 27);
     padding-right: 10px;
 }
 .contact-me {
+   position: absolute;
+   top: 1160px;
+}
+
+#card1 {
     position: absolute;
-    top: 845px;
-    left: 270px;
-    height: 150px;
-    color: rgb(27, 77, 27);
+    top: 780px;
+    left: 280px;
+}
+
+#card2 {
+    position: absolute;
+    top: 780px;
+    left: 700px;
+}
+
+#card3 {
+    position: absolute;
+    top: 780px;
+    left: 1120px;
+}
+
+#card4 {
+    position: absolute;
+    top: 780px;
+    left: 1540px;
+}
+
+#contactMeCard {
+    position: absolute;
+    top: 1220px;
+    left: 300px;
 }
