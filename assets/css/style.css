@@ -1,152 +1,86 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+/* Color Palette /
+:root {
+  --cream: #CBBEB3;
+  --pink: #D9BDC5;
+  --lavender: #E8C7DE;
+  --gray: #69626D;
+  --black: #323031;
+}
+
+/ Reset */
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 body {
-    background-color: #d4dde7;
+  font-family: Arial, sans-serif;
+  background-color: var(--cream);
+  color: var(--black);
+  line-height: 1.6;
 }
 
-/* This CSS code is related to the top header. */
-.main-header {
-    display: flex;
-    background: rgb(44, 44, 48);
-    height: 75px;
-    width: 100%;
-}
-#name {
-    display: block;
-    width: 300px;
-    height: 50px;
-    text-align: center;
-    background: rgb(102, 145, 105);
-    margin-top: 10px;
-    font-size: 40px;
-    padding-bottom: 15px;
-    color: rgb(44, 44, 48);
+header {
+  background: var(--gray);
+  color: white;
+  padding: 1rem;
+  text-align: center;
 }
 
-li a{
-    color: rgb(102, 145, 105); 
+header h1 {
+  margin-bottom: 0.5rem;
 }
 
-li {
-    padding: 15px 10px 0px 10px;
-    list-style-type: none;
-    display: inline;
-    font-size: 25px;
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.nav-titles {
-    position: absolute;
-    top: 40px;
-    right: 30px;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/*This is for the CSS code regarding to the second header.*/
-.header2 {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-.subtitle {
-    position: absolute;
-    bottom: 30px;
-    right: 50px;
-    display: block;
-    font-size: 30px;
-    width: 200px;
-    height: 50px;
-    padding: 8px;
-    background: rgb(102, 145, 105);
-}
-#image {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
 }
 
-/* About Me CSS Code */
-.about-me{
-    position: relative;
-}
-.side-titles {
-    position: absolute;
-    top: 40px;
-    display: block;
-    color: rgb(27, 77, 27);
-    font-size: 60px;
-    width: 200px;
-    margin-left: 61px;
-    border-right: 5px solid rgb(27, 77, 27);
-    height: 400px;
+section h2 {
+  margin-bottom: 1rem;
+  color: var(--gray);
 }
 
-#biography {
-    position: absolute;
-    font-size: 18px;
-    top: 50px;
-    left: 280px;
-    padding-left: 10px;
-    color: rgb(27, 77, 27);
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
 }
 
-/* Work CSS Code */
-.side-titles2 {
-    display: block;
-    position: relative;
-    color: rgb(27, 77, 27);
-    font-size: 60px;
-    width: 200px;
-    margin-left: 61px;
-    border-right: 5px solid rgb(27, 77, 27);
-    height: 300px;
-    top: 500px;
+article, li {
+  background: var(--pink);
+  padding: 1rem;
+  border-radius: 8px;
 }
 
-/* Contact Me CSS Code */
-.side-titles4 {
-    position: absolute;
-    color: rgb(27, 77, 27);
-    font-size: 60px;
-    width: 220px;
-    margin-left: 40px;
-    top: 1160px;
-    border-right: 5px solid rgb(27, 77, 27);
-    padding-right: 10px;
-}
-.contact-me {
-   position: absolute;
-   top: 1160px;
+article h3 {
+  margin-bottom: 0.5rem;
+  color: var(--black);
 }
 
-#card1 {
-    position: absolute;
-    top: 780px;
-    left: 280px;
+#contact a {
+  color: var(--gray);
 }
 
-#card2 {
-    position: absolute;
-    top: 780px;
-    left: 700px;
-}
-
-#card3 {
-    position: absolute;
-    top: 780px;
-    left: 1120px;
-}
-
-#card4 {
-    position: absolute;
-    top: 780px;
-    left: 1540px;
-}
-
-#contactMeCard {
-    position: absolute;
-    top: 1220px;
-    left: 300px;
+footer {
+  background: var(--gray);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
